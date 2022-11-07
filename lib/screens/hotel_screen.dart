@@ -14,12 +14,12 @@ class HotelScreen extends StatelessWidget {
 
     return Container(
       width: size.width * 0.6,
-      height: 250,
+      height: AppLayout.getHeight(250),
       padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 4),
       margin: const EdgeInsets.only(right: 17, left: 5),
       decoration: BoxDecoration(
           color: Styles.primaryColor,
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(AppLayout.getHeight(24)),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.shade200,
@@ -29,9 +29,9 @@ class HotelScreen extends StatelessWidget {
           ]),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Container(
-          height: 100,
+          height: AppLayout.getHeight(100),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(AppLayout.getHeight(12)),
             color: Styles.primaryColor,
             image: DecorationImage(
                 fit: BoxFit.cover,

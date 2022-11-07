@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/screens/home_screen.dart';
+import 'package:ticket_booking/screens/search_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -9,10 +10,10 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
-    const Text('swopnil'),
+    const SearchScreen(),
     const Text('shahi'),
     const Text('data'),
   ];
